@@ -11,6 +11,14 @@ class Page1 extends StatelessWidget {
         appBar: AppBar(
           title: Text('Page 1'),
         ),
+        body: Center(
+          child: ElevatedButton(
+            child: Text('Back'),
+            onPressed: () {
+              Navigator.pop(context);
+            },
+          ),
+        ),
       ),
     );
   }
