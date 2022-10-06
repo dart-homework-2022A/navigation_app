@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'page1.dart';
 
 class Home extends StatefulWidget {
   const Home({Key? key}) : super(key: key);
@@ -19,21 +20,12 @@ class _HomeState extends State<Home> {
             Navigator.push(
               context,
               MaterialPageRoute(builder: ((context) {
-                return NextPage();
+                return Page1();
               })),
             );
           },
         ),
       ),
     );
-  }
-}
-
-class NextPage extends StatelessWidget {
-  const NextPage({Key? key}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return Container();
   }
 }
