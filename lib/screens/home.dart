@@ -21,23 +21,13 @@ class _HomeState extends State<Home> {
             ElevatedButton(
               child: Text('Page 1'),
               onPressed: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: ((context) {
-                    return Page1();
-                  })),
-                );
+                Navigator.pushNamed(context, 'page1');
               },
             ),
             ElevatedButton(
               child: Text('Page 2'),
               onPressed: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: ((context) {
-                    return Page2();
-                  })),
-                );
+                Navigator.pushNamed(context, 'page2');
               },
             )
           ],
